@@ -1,0 +1,21 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="400" d:DesignHeight="400"
+             x:Class="AvaloniaUIDemo.Views.UserLogin">
+  <StackPanel Orientation="Vertical" Spacing="4">
+    <Label Content="沈苏数字化门诊系统" />
+    <TextBox Width="200"
+       Watermark="登录密码"
+       Classes="revealPasswordButton"
+       UseFloatingWatermark="True"
+       PasswordChar="*"
+       Text="" MaxLength="50" />
+    <TextBox Width="200"
+                   Watermark="Floating Watermark"
+                   UseFloatingWatermark="True"
+                   Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit."/>
+  </StackPanel>
+ 
+</UserControl>

@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+  <ItemGroup>
+    <AvaloniaResource Include="Assets\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Assets\1.jpg" />
+    <None Remove="Assets\2.jpg" />
+    <None Remove="Assets\3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Avalonia" Version="0.10.0" />
+    <PackageReference Include="Avalonia.Desktop" Version="0.10.0" />
+    <PackageReference Include="Avalonia.Diagnostics" Version="0.10.0" />
+    <PackageReference Include="Avalonia.ReactiveUI" Version="0.10.0" />
+    <PackageReference Include="Dock.Avalonia" Version="0.10.0" />
+    <PackageReference Include="Dock.Avalonia.Themes.Default" Version="0.10.0" />
+    <PackageReference Include="Dock.Model.ReactiveUI" Version="0.10.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Views\CustomNotificationView.axaml.cs">
+      <DependentUpon>CustomNotificationView.axaml</DependentUpon>
+    </Compile>
+    <Compile Update="Views\NotificationsPage.axaml.cs">
+      <DependentUpon>NotificationsPage.axaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,21 @@
+<Window xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:vm="using:AvaloniaUIDemo.ViewModels"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+             x:Class="AvaloniaUIDemo.Views.NotificationsPage">
+  <Design.DataContext>
+    <vm:NotificationViewModel/>
+  </Design.DataContext>
+
+  <Grid VerticalAlignment="Center" HorizontalAlignment="Center">
+  <StackPanel Orientation="Vertical" Spacing="4" HorizontalAlignment="Left">
+    <TextBlock Classes="h1">Notifications</TextBlock>
+    <Button Background="LightBlue" Content="ShowErrorCommand" Command="{Binding btnClickCommand}" CommandParameter="ShowErrorCommand" />
+    <Button Background="LightBlue" Content="ShowInformation" Command="{Binding btnClickCommand}" CommandParameter="ShowInformation" />
+    <Button Background="LightBlue" Content="ShowSuccess" Command="{Binding btnClickCommand}" CommandParameter="ShowSuccess" />
+    <Button Background="LightBlue" Content="ShowWarning" Command="{Binding btnClickCommand}" CommandParameter="ShowWarning" />
+  </StackPanel>
+  </Grid>
+</Window>
